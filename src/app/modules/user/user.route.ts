@@ -9,6 +9,6 @@ router.post(
   validationRequest(userValidation.userValidationSchema),
   UserController.createStudent,
 );
-router.get('/signin', UserController.getSingleUser);
+router.post('/signin', UserController.getSingleUser);
 
 export const UserRoute = router;
